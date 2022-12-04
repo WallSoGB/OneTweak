@@ -9,6 +9,7 @@ OneTweakHost::OneTweakHost()
 	_MESSAGE(__FUNCTION__);
 
 	SetDPIAware();
+	DisableProcessWindowsGhosting();
 }
 
 OneTweakHost::~OneTweakHost()
