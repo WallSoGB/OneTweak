@@ -86,13 +86,13 @@ HWND WINAPI OneTweakDriver::HookCreateWindowExA(DWORD dwExStyle, LPCSTR lpClassN
 	HWND hWnd = OneTweakDriver::GetInstance().CreateWindowExA(dwExStyle, lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
 
 	// Workaround crash, do not print/compare lpClassName/lpWindowName directly !
-	std::unique_ptr<char[]> className(new char[MAX_PATH]);
-	std::unique_ptr<char[]> windowName(new char[MAX_PATH]);
+	auto className = std::make_unique<char[]>(MAX_PATH);
+	auto windowName = std::make_unique<char[]>(MAX_PATH);
 
 	GetClassNameA(hWnd, className.get(), MAX_PATH);
 	GetWindowTextA(hWnd, windowName.get(), MAX_PATH);
 
-	_MESSAGE("Window 0x%p: ClassName \"%s\", WindowName: \"%s\"", hWnd, className, windowName);
+	_MESSAGE("Window 0x%p: ClassName \"%s\", WindowName: \"%s\"", hWnd, className.get(), windowName.get());
 
 	if (strcmp(className.get(), config.ClassName.c_str()) == 0 && strcmp(windowName.get(), config.WindowName.c_str()) == 0)
 	{
