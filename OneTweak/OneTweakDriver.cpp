@@ -36,6 +36,11 @@ bool OneTweakDriver::Run()
 		MH_CreateHookApiEx(L"dinput8.dll", "DirectInput8Create", HookDirectInput8Create, reinterpret_cast<void**>(&DirectInput8Create), NULL);
 	}
 
+	if (config.windows_ghosting.disabled) {
+		_MESSAGE("Disabling Windows Ghosting");
+		DisableProcessWindowsGhosting();
+	}
+
 	return MH_EnableHook(MH_ALL_HOOKS) == MH_OK;
 }
 

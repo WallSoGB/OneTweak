@@ -17,6 +17,7 @@ void OneTweakConfig::SaveConfig(CSimpleIniA* ini)
 
 	ini->SetBoolValue("Global", "BorderlessWindow", true, "#Enable Borderless Window");
 	ini->SetBoolValue("Global", "DoubleCursorFix", true, "#Enable Double Cursor Fix");
+	ini->SetBoolValue("Global", "DisableWindowsGhosting", false, "#Disable the \"Not responding\" message during loading screens");
 	ini->SetBoolValue("Global", "Priority", false, "#Enable dynamic priority change");
 
 	ini->SetLongValue("Priority", "Foreground", 3, "#0 - idle, 1 - below normal, 2 - normal, 3 - above normal, 4 - high, 5 - realtime");
@@ -59,6 +60,7 @@ void OneTweakConfig::ReadConfig()
 
 	borderless.enabled = ini.GetBoolValue("Global", "BorderlessWindow");
 	double_cursor_fix.enabled = ini.GetBoolValue("Global", "DoubleCursorFix");
+	windows_ghosting.disabled = ini.GetBoolValue("Global", "DisableWindowsGhosting");
 
 	priority.enabled = ini.GetBoolValue("Global", "Priority");
 

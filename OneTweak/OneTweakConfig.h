@@ -52,6 +52,11 @@ public:
         bool enabled;
     } double_cursor_fix;
 
+    struct
+    {
+        bool disabled;
+    } windows_ghosting;
+
 	struct
 	{
 		bool nonexclusive;
