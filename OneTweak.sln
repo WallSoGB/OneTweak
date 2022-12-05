@@ -12,8 +12,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libMinHook", "MinHook\build
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "common\common.vcxproj", "{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleIni", "simpleini\vcproj\SimpleIni.vcxproj", "{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug Unicode|Win32 = Debug Unicode|Win32
@@ -70,28 +68,12 @@ Global
 		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release|Win32.ActiveCfg = Release|Win32
 		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release|Win32.Build.0 = Release|Win32
 		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release|x64.ActiveCfg = Release|Win32
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Debug Unicode|Win32.ActiveCfg = Debug|Win32
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Debug Unicode|Win32.Build.0 = Debug|Win32
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Debug Unicode|x64.ActiveCfg = Debug|x64
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Debug Unicode|x64.Build.0 = Debug|x64
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Debug|Win32.ActiveCfg = Debug|Win32
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Debug|Win32.Build.0 = Debug|Win32
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Debug|x64.ActiveCfg = Debug|x64
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Debug|x64.Build.0 = Debug|x64
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Release Unicode|Win32.ActiveCfg = Release|Win32
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Release Unicode|Win32.Build.0 = Release|Win32
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Release Unicode|x64.ActiveCfg = Release|x64
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Release Unicode|x64.Build.0 = Release|x64
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Release|Win32.ActiveCfg = Release|Win32
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Release|Win32.Build.0 = Release|Win32
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Release|x64.ActiveCfg = Release|x64
-		{9A59FC4F-AD32-4BD3-B6B5-9BB0DDC6138D}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {154B39AF-581D-4220-B2DD-114A02759BF9}
 		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {154B39AF-581D-4220-B2DD-114A02759BF9}
 	EndGlobalSection
 EndGlobal
