@@ -23,7 +23,7 @@ void OneTweakConfig::SaveConfig(CSimpleIniA* ini)
 	ini->SetLongValue("Priority", "Foreground", 3, "#0 - idle, 1 - below normal, 2 - normal, 3 - above normal, 4 - high, 5 - realtime");
 	ini->SetLongValue("Priority", "Background", 1, "#0 - idle, 1 - below normal, 2 - normal, 3 - above normal, 4 - high, 5 - realtime");
 
-	ini->SetBoolValue("BorderlessWindow", "Active", true, "#Active in background");
+	ini->SetBoolValue("BorderlessWindow", "Active", false, "#Active in background");
 
 	ini->SetLongValue("BorderlessWindow", "StyleFlags", 0, "#Window style flags");
 	ini->SetLongValue("BorderlessWindow", "StyleFlagsEx", 0, "#Window style flags ex");
