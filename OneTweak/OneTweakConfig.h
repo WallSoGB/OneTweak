@@ -2,7 +2,7 @@
 
 #include <SimpleIni.h>
 
-#define CONFIG_VERSION 12
+#define CONFIG_VERSION 13
 
 class OneTweakConfig
 {
